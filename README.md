@@ -3,6 +3,8 @@
 **Identity, endpoint-management and IT service-desk workflows in a controlled lab.**  
 Windows Server 2022 (reference build) · Active Directory Domain Services · Group Policy · Microsoft Entra ID · Microsoft Intune · osTicket · PowerShell · Python
 
+**[View verified evidence, demo outputs and GitHub CI results](validation/VERIFIED-EVIDENCE.md)** · [Read the historical lab evidence capture plan](validation/PROVE-YOUR-LAB.md)
+
 ![Illustrative architecture diagram](assets/architecture.svg)
 
 > **Evidence and implementation status**  
