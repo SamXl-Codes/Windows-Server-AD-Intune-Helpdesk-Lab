@@ -91,6 +91,7 @@ From **Admin Panel > Manage > SLA Plans**, capture the configured test SLA plan.
 5. Store a descriptive, redacted PNG under `assets/evidence/` with a meaningful name (for example `e05-gpo-applied-redacted.png`). The existing demo screenshots belong in `assets/screenshots/` and must remain clearly identified as synthetic.
 6. For each screenshot, add to the evidence index its filename, capture date, source environment, what it proves and what it **does not** prove. A screenshot only evidences the visible state, not every technical claim.
 7. Run `scripts/New-LabEvidenceManifest.ps1` on the local redacted captures to obtain file hashes and an inventory **before** uploading the final redacted images. Hashes support integrity tracking; **they do not authenticate the deployment**.
+   - The repository deliberately **gitignores `assets/evidence/*` by default** as a safeguard. After manual redaction review, publish only selected vetted images with `git add -f assets/evidence/e01-server2022-role-redacted.png` (and analogous filenames), or through GitHub's web uploader. Never force-add your `evidence-local/` directory.
 8. Update the README's evidence-status table only after reviewing the actual images or reports. Use `Not independently verified` for any remaining gaps.
 
 **Publishing warning:** The evidence script does **not** upload, inspect, redact or approve files. It is your responsibility to assess whether each screenshot can be publicly shared. Never commit original unredacted domain/tenant exports.
