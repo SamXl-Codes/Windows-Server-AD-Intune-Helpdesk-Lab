@@ -20,7 +20,7 @@ This page is an **evidence index**, not a claim that archived infrastructure scr
 
 ## Download independent build output
 
-Open the latest successful run of [Validate offline lab demos](../../actions/workflows/validate.yml) on GitHub. Under **Artifacts** download:
+Open the latest successful run of [Validate offline lab demos](https://github.com/SamXl-Codes/Windows-Server-AD-Intune-Helpdesk-Lab/actions/workflows/validate.yml) on GitHub. Under **Artifacts** download:
 
 - **offline-ticket-analysis-evidence**: actual Python unit-test console output, a CLI transcript generated from fictional sample tickets, and the generated HTML report.
 - **powershell-dry-run-evidence**: the output of executing the account provisioning script in **preview-only** mode on a Windows GitHub Actions runner. This makes **no Active Directory changes**.
