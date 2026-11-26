@@ -81,7 +81,11 @@ AD provisioning is deliberately **non-operative by default**. `-Apply` is requir
 
 ## How to document a completed lab honestly
 
-See [`validation/EVIDENCE-CHECKLIST.md`](validation/EVIDENCE-CHECKLIST.md). Save **redacted real screenshots** under `assets/evidence/` only after verifying they genuinely show your own lab. Suggested captures: ADUC OUs and groups, `Get-ADDomain` and server version, `gpresult` summary, `dsregcmd /status` with tenant/user IDs removed, Intune device compliance and update-ring status, osTicket queues/SLA dashboard with names and email addresses removed.
+**Author-confirmed lab, awaiting externally inspectable evidence:** The project owner has confirmed completing the Windows Server, AD DS, GPO, Entra/Intune and osTicket tasks. The current public files demonstrate the reproducible offline tooling, but the original deployment screenshots and configuration exports are not yet present.
+
+**[Open the step-by-step evidence capture guide](validation/PROVE-YOUR-LAB.md)**. It maps every CV claim to a real screenshot or read-only export, explains safe redaction, and provides an integrity-inventory helper at [`scripts/New-LabEvidenceManifest.ps1`](scripts/New-LabEvidenceManifest.ps1).
+
+See also [`validation/EVIDENCE-CHECKLIST.md`](validation/EVIDENCE-CHECKLIST.md). Save **redacted real screenshots** under `assets/evidence/` only after verifying they genuinely show your own lab. Suggested captures: ADUC OUs and groups, `Get-ADDomain` and server version, `gpresult` summary, `dsregcmd /status` with tenant/user IDs removed, Intune device compliance and update-ring status, osTicket queues/SLA dashboard with names and email addresses removed.
 
 Until that is done, this repo is best described on a CV as a **documented Windows/AD/Intune/osTicket lab reference with offline ticket reporting and automation templates**, not as verified proof of completing every infrastructure deployment.
 
