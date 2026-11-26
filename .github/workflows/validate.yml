@@ -1,0 +1,37 @@
+name: Validate offline lab demos
+on:
+  push:
+  pull_request:
+jobs:
+  python-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Python unit tests
+        run: python -m unittest discover -s tests -v
+      - name: Rebuild synthetic demo report
+        run: python -m labtools report --file sample-data/tickets.csv --as-of 2026-11-26T12:00:00+00:00 --html reports/demo.html
+      - name: Verify diagram and screenshot assets exist
+        run: |
+          test -s assets/architecture.svg
+          test -s assets/workflow.svg
+          test -s assets/screenshots/synthetic-ticket-dashboard.png
+          test -s assets/screenshots/synthetic-ticket-cli.png
+  powershell-syntax:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Parse PowerShell scripts without executing them
+        shell: pwsh
+        run: |
+          $errors = @()
+          Get-ChildItem scripts -Filter '*.ps1' -Recurse | ForEach-Object {
+            $tokens = $null
+            $parseErrors = $null
+            [System.Management.Automation.Language.Parser]::ParseFile($_.FullName, [ref]$tokens, [ref]$parseErrors) | Out-Null
+            if ($parseErrors) { $errors += $parseErrors }
+          }
+          if ($errors.Count -gt 0) { $errors | Format-Table; throw 'PowerShell parsing failed.' }

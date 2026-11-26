@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 700" width="1280" height="700" role="img" aria-label="Illustrative lab architecture for Windows Server AD DS Intune and helpdesk">
+<defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#111722"/><stop offset="1" stop-color="#263143"/></linearGradient><marker id="arrow" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0 0 L7 3 L0 6" fill="none" stroke="#adc2e4" stroke-width="1.4"/></marker></defs>
+<rect width="1280" height="700" rx="28" fill="url(#bg)"/>
+<text x="64" y="62" font-family="Arial,sans-serif" font-size="18" font-weight="700" letter-spacing="2" fill="#a6b8d1">REFERENCE TOPOLOGY</text>
+<text x="64" y="112" font-family="Arial,sans-serif" font-size="39" font-weight="700" fill="white">Identity, endpoint &amp; service desk lab</text>
+<text x="64" y="146" font-family="Arial,sans-serif" font-size="17" fill="#b5c0cf">Isolated lab design · Proposed systems shown for learning and validation</text>
+<rect x="60" y="190" width="740" height="358" rx="20" fill="#182231" stroke="#57677e" stroke-width="1.5"/>
+<text x="90" y="227" font-family="Arial,sans-serif" font-size="16" font-weight="700" fill="#dce8fa">LOCAL LAB / PRIVATE NETWORK</text>
+<rect x="95" y="262" width="296" height="115" rx="15" fill="#2d3c51" stroke="#8198b4"/>
+<rect x="115" y="284" width="8" height="68" rx="4" fill="#9dbde5"/>
+<text x="141" y="301" font-family="Arial,sans-serif" font-size="19" font-weight="700" fill="white">Windows Server 2022</text>
+<text x="141" y="329" font-family="Arial,sans-serif" font-size="16" fill="#c1cbd9">AD DS · DNS · GPO</text>
+<text x="141" y="352" font-family="Arial,sans-serif" font-size="14" fill="#a9bbce">OUs / groups / test users</text>
+<rect x="466" y="262" width="295" height="115" rx="15" fill="#2d3c51" stroke="#8198b4"/>
+<rect x="487" y="284" width="8" height="68" rx="4" fill="#a9bed1"/>
+<text x="513" y="301" font-family="Arial,sans-serif" font-size="19" font-weight="700" fill="white">Windows 11 client</text>
+<text x="513" y="329" font-family="Arial,sans-serif" font-size="16" fill="#c1cbd9">Domain join · gpresult</text>
+<text x="513" y="352" font-family="Arial,sans-serif" font-size="14" fill="#a9bbce">Local endpoint diagnostics</text>
+<path d="M394 320 H460" stroke="#adc2e4" stroke-width="2.6" stroke-dasharray="5 5" marker-end="url(#arrow)"/>
+<rect x="95" y="408" width="666" height="103" rx="15" fill="#223044" stroke="#6f829a"/>
+<text x="121" y="446" font-family="Arial,sans-serif" font-size="18" font-weight="700" fill="white">PowerShell utilities &amp; local evidence</text>
+<text x="121" y="477" font-family="Arial,sans-serif" font-size="15" fill="#c1cbd9">Safe preview of test-user provisioning · Read-only inventory and MDM diagnostics</text>
+<rect x="837" y="190" width="379" height="166" rx="20" fill="#253549" stroke="#758da9" stroke-width="1.5"/>
+<text x="866" y="229" font-family="Arial,sans-serif" font-size="18" font-weight="700" fill="white">Entra ID / Microsoft Intune</text>
+<text x="866" y="261" font-family="Arial,sans-serif" font-size="16" fill="#c5d2e1">Enrollment · MFA · compliance</text>
+<text x="866" y="287" font-family="Arial,sans-serif" font-size="16" fill="#c5d2e1">App status · Windows update rings</text>
+<text x="866" y="325" font-family="Arial,sans-serif" font-size="13" font-weight="700" fill="#d6b990">REQUIRES LICENSED TEST TENANT</text>
+<path d="M763 308 L831 278" stroke="#adc2e4" stroke-width="2.1" stroke-dasharray="6 6" marker-end="url(#arrow)"/>
+<rect x="837" y="382" width="379" height="166" rx="20" fill="#253549" stroke="#758da9" stroke-width="1.5"/>
+<text x="866" y="421" font-family="Arial,sans-serif" font-size="18" font-weight="700" fill="white">osTicket help desk</text>
+<text x="866" y="452" font-family="Arial,sans-serif" font-size="16" fill="#c5d2e1">Incident intake · triage · SLA</text>
+<text x="866" y="479" font-family="Arial,sans-serif" font-size="16" fill="#c5d2e1">CSV demo analytics (offline)</text>
+<text x="866" y="517" font-family="Arial,sans-serif" font-size="13" font-weight="700" fill="#d6b990">NO LIVE OSTICKET LINK</text>
+<path d="M764 464 L832 464" stroke="#adc2e4" stroke-width="2.1" stroke-dasharray="6 6" marker-end="url(#arrow)"/>
+<rect x="60" y="587" width="1156" height="66" rx="12" fill="#2b343f" stroke="#777f89"/>
+<text x="84" y="626" font-family="Arial,sans-serif" font-size="16" font-weight="700" fill="#ffffff">ILLUSTRATIVE REFERENCE ONLY</text>
+<text x="406" y="626" font-family="Arial,sans-serif" font-size="15" fill="#e0e7ef">Not a screenshot or evidence of an actual AD, Intune or osTicket deployment</text>
+</svg>

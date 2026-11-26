@@ -1,0 +1,9 @@
+{
+  "proposed_domain": "corp.lab.example",
+  "operating_system": "Windows Server 2022 (reference setup, not verified)",
+  "organisational_units": ["LabUsers", "LabDevices", "LabGroups"],
+  "security_groups": ["SG-Lab-Support", "SG-Lab-Operations", "SG-Lab-Readers"],
+  "device_types": ["Windows 11 lab workstation"],
+  "cloud_requirements": ["Licensed test tenant", "Authorised test users", "MDM enrollment permitted"],
+  "implementation_status": "proposed_and_documented_not_deployment_evidence"
+}

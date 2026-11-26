@@ -1,0 +1,7 @@
+ticket_id,opened_at,resolved_at,priority,status,category,summary
+LAB-1001,2026-11-25T08:00:00+00:00,2026-11-25T11:00:00+00:00,P1,resolved,Access,Lab account locked
+LAB-1002,2026-11-24T09:00:00+00:00,2026-11-24T20:00:00+00:00,P2,resolved,Endpoint,Test laptop cannot connect
+LAB-1003,2026-11-25T10:00:00+00:00,2026-11-25T18:00:00+00:00,P3,resolved,Device,Lab device compliance warning
+LAB-1004,2026-11-26T05:00:00+00:00,,P3,open,Identity,Joiner request approval pending
+LAB-1005,2026-11-22T08:00:00+00:00,2026-11-25T10:00:00+00:00,P4,resolved,Software,Install test software package
+LAB-1006,2026-11-26T10:00:00+00:00,,P2,open,Network,Test VLAN name resolution issue
